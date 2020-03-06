@@ -197,10 +197,6 @@ class status(Command):
     def turkstatus(self, session):
         print "Mechanical Turk Status:"
         print "  Balance:     ${0:.2f}".format(api.server.balance)
-        print "  Net Payout:  ${0:.2f}".format(api.server.rewardpayout)
-        print "  Net Fees:    ${0:.2f}".format(api.server.feepayout)
-        print "  Num Created: {0}".format(api.server.numcreated)
-        print "  Approved:    {0:.2f}%".format(api.server.approvalpercentage)
         print ""
 
     def serverstatus(self, session):
